@@ -2,150 +2,136 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>مكتب العمران للتعهدات والترميم والإكساء والتشطيب والديكور</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- أيقونات Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مكتب العمران كروب للتعهدات</title>
+  <meta name="description" content="مكتب العمران كروب للتعهدات يقدم خدمات البناء والإكساء والديكور في دمشق وريفها.">
+  <meta name="keywords" content="تعهدات, إكساء, ديكور, دمشق, سوريا, العمران كروب">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
+    body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
+    header { background-color: #2c3e50; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #eee; text-align: center; padding: 10px; }
+    nav a { margin: 0 10px; text-decoration: none; color: #2c3e50; font-weight: bold; }
+    section { padding: 20px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { color: #2c3e50; margin-bottom: 10px; }
+    ul { list-style: none; padding: 0; }
+    ul li::before { content: "✅ "; color: green; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .gallery-grid div { text-align: center; }
+    .gallery-grid img { width: 100%; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    form input, form textarea, form select, form button {
+      width: 100%; margin: 8px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;
     }
-    header {
-      background: linear-gradient(to left, #2c3e50, #34495e);
-      color: white;
-      padding: 30px;
-      text-align: center;
+    form button {
+      background-color: #2c3e50; color: white; font-weight: bold; cursor: pointer;
     }
-    nav {
-      background-color: #2980b9;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+    .contact-buttons a {
+      display: inline-block; margin: 10px; padding: 12px 20px; text-decoration: none;
+      color: white; border-radius: 5px; font-weight: bold;
     }
-    nav a {
-      color: white;
-      padding: 15px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+    .whatsapp-button { background-color: #25D366; }
+    .email-button { background-color: #0072c6; }
+    .faq-item { margin-bottom: 15px; }
+    .faq-question {
+      width: 100%; background-color: #eee; border: none; padding: 12px; font-weight: bold;
+      text-align: right; cursor: pointer; border-radius: 5px;
     }
-    nav a:hover {
-      background-color: #1f618d;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card i {
-      font-size: 40px;
-      color: #2980b9;
-      margin-bottom: 15px;
-    }
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .social-icons a {
-      color: white;
-      margin: 0 10px;
-      font-size: 20px;
-      transition: color 0.3s;
-    }
-    .social-icons a:hover {
-      color: #f1c40f;
+    .faq-answer {
+      display: none; padding: 10px; background-color: #fff;
+      border-right: 3px solid #25D366; margin-top: 5px; border-radius: 5px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>مكتب العمران للتعهدات والترميم والإكساء وأعمال التشطيب والديكور</h1>
-  <p>نحو جودة راسخة، تشطيب متقن، وديكور يعكس ذوقك</p>
+  <h1>مكتب العمران كروب للتعهدات</h1>
 </header>
 
 <nav>
-  <a href="#home">الرئيسية</a>
-  <a href="#services">خدماتنا</a>
-  <a href="#projects">مشاريعنا</a>
+  <a href="#gallery">معرض الصور</a>
   <a href="#about">من نحن</a>
+  <a href="#services">خدماتنا</a>
+  <a href="#request">طلب تعهد أو إكساء</a>
   <a href="#contact">اتصل بنا</a>
+  <a href="#faq">الأسئلة الشائعة</a>
 </nav>
 
-<section id="home">
-  <h2>مرحبًا بكم في مكتب العمران</h2>
-  <p>نحن مكتب هندسي متخصص في تقديم حلول متكاملة في التعهدات، الترميم، الإكساء، التشطيب، والديكور، مع التزام كامل بالجودة والمواعيد.</p>
-</section>
-
-<section id="services">
-  <h2>خدماتنا</h2>
-  <div class="services">
-    <div class="card">
-      <i class="fas fa-paint-roller"></i>
-      <h3>الإكساء والتشطيب</h3>
-      <p>تنفيذ أعمال الإكساء والتشطيب بأحدث التصاميم والمواد عالية الجودة.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-tools"></i>
-      <h3>الترميم الهندسي</h3>
-      <p>إعادة تأهيل المباني القديمة وتعزيز بنيتها الإنشائية.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-file-signature"></i>
-      <h3>التعهدات العقارية</h3>
-      <p>إدارة وتسليم التعهدات وفقًا للأنظمة القانونية والمواصفات الفنية المعتمدة.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-brush"></i>
-      <h3>الديكور الداخلي</h3>
-      <p>تصميم وتنفيذ ديكورات داخلية عصرية تلائم ذوق العميل والمساحة.</p>
-    </div>
+<section id="gallery">
+  <h2>📸 معرض الصور</h2>
+  <div class="gallery-grid">
+    <div><h3>🪨 الحجر</h3><img src="images/stone.jpg" alt="الحجر" loading="lazy"></div>
+    <div><h3>🧱 الرخام</h3><img src="images/marble.jpg" alt="الرخام" loading="lazy"></div>
+    <div><h3>🪵 الخشب</h3><img src="images/wood.jpg" alt="الخشب" loading="lazy"></div>
+    <div><h3>🪟 الألمنيوم</h3><img src="images/aluminum.jpg" alt="الألمنيوم" loading="lazy"></div>
+    <div><h3>🧱 السيراميك</h3><img src="images/ceramic.jpg" alt="السيراميك" loading="lazy"></div>
+    <div><h3>🎨 الديكور</h3><img src="images/decor.jpg" alt="الديكور" loading="lazy"></div>
+    <div><h3>🎨 الدهان والصباغ</h3><img src="images/paint.jpg" alt="الدهان والصباغ" loading="lazy"></div>
   </div>
-</section>
-
-<section id="projects">
-  <h2>مشاريعنا</h2>
-  <p>نفخر بتنفيذ عشرات المشاريع في دمشق وضواحيها، تشمل شقق سكنية، مراكز تجارية، ومبانٍ حكومية، مع التزام كامل بالجودة والتميز.</p>
 </section>
 
 <section id="about">
-  <h2>من نحن</h2>
-  <p>تأسس مكتب العمران عام 2010 ليكون وجهة موثوقة في عالم التعهدات الهندسية، الترميم، الإكساء، وأعمال التشطيب والديكور.  
-  نمتلك خبرة واسعة في تنفيذ المشاريع السكنية والتجارية، ونحرص على تقديم حلول متكاملة تجمع بين الجودة، الجمالية، والدقة في التنفيذ.</p>
-</section>
-
-<section id="contact">
-  <h2>اتصل بنا</h2>
-  <p><i class="fas fa-user"></i> المسؤول: محمد الإبراهيم</p>
-  <p><i class="fas fa-phone"></i> الهاتف: 0995607888</p>
-  <p><i class="fas fa-envelope"></i> البريد الإلكتروني: alomran.s197@gmail.com</p>
-  <p><i class="fas fa-map-marker-alt"></i> العنوان: سوريا – دمشق</p>
-  <div class="social-icons">
-    <a href="https://wa.me/963995607888" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.facebook.com/alomran.office" target="_blank" title="فيسبوك"><i class="fab fa-facebook"></i></a>
+  <h2>🏢 من نحن</h2>
+  <p>مكتب العمران كروب للتعهدات هو فريق هندسي متخصص في تنفيذ أعمال البناء والإكساء من الصفر حتى المفتاح، بخبرة تمتد لأكثر من 15 عامًا في السوق السورية.</p>
+  <p>نتميز بالدقة، الالتزام، والجودة العالية في جميع مراحل العمل، من التصميم إلى التسليم.</p>
+  <p>نغطي كافة مناطق دمشق وريفها بإشراف مباشر من المهندس <strong>محمد الإبراهيم</strong> والمهندس <strong>عبدالله الإبراهيم</strong>.</p>
+  <div class="contact-info">
+    <p>📍 الموقع: سوريا – دمشق</p>
+    <p>📞 الهاتف: 00963995607888</p>
+    <p>📧 البريد الإلكتروني: alomran.s197@gmail.com</p>
   </div>
 </section>
 
-<footer>
-  &copy; 2025 مكتب العمران. جميع الحقوق محفوظة.
-</footer>
+<section id="services">
+  <h2>🛠️ خدماتنا</h2>
+  <ul>
+    <li>إنشاء من الصفر حتى المفتاح</li>
+    <li>تمديدات صحية وكهربائية</li>
+    <li>تركيب رخام، سيراميك، جرانيت، بلاط</li>
+    <li>أبواب وشبابيك خشب وألمنيوم هاي غلوس</li>
+    <li>ديكورات جبس بورد</li>
+    <li>أعمال المعجونة والدهانات</li>
+    <li>بياضات صحية وكهربائية</li>
+  </ul>
+</section>
 
-</body>
-</html>
+<section id="request">
+  <h2>🧾 طلب تعهد أو تنفيذ أعمال</h2>
+  <form>
+    <label>الاسم الكامل</label>
+    <input type="text" name="fullname" required>
+
+    <label>رقم الهاتف أو واتساب</label>
+    <input type="text" name="phone" required>
+
+    <label>المنطقة أو العنوان</label>
+    <input type="text" name="address" required>
+
+    <label>نوع الخدمة المطلوبة</label>
+    <select name="service" required>
+      <option value="">اختر نوع الخدمة</option>
+      <option>إنشاء من الصفر حتى المفتاح</option>
+      <option>تمديدات صحية</option>
+      <option>تمديدات كهربائية</option>
+      <option>تركيب رخام أو سيراميك</option>
+      <option>أعمال دهان ومعجونة</option>
+      <option>ديكورات جبس بورد</option>
+      <option>أبواب وشبابيك خشب أو ألمنيوم</option>
+    </select>
+
+    <label>المساحة المطلوبة</label>
+    <input type="text" name="area" placeholder="مثلاً: 120 متر">
+
+    <label>ملاحظات إضافية</label>
+    <textarea name="notes" rows="4" placeholder="اختياري"></textarea>
+
+    <button type="submit">📤 إرسال الطلب</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>📞 اتصل بنا</h2>
+  <p>نحن جاهزون للرد على استفساراتكم وتقديم الدعم الكامل في أي وقت.</p>
+  <div class="contact-buttons">
+    <a href="https://wa.me/963995607888" target="_blank" class="whatsapp-button">💬 واتساب</a>
+    <a href="mailto:alomran.s197@gmail.com" class="email-button">📧 بريد إلكتروني</a>
+  </
