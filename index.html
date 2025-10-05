@@ -6,7 +6,19 @@
   <title>مكتب العمران كروب للتعهدات</title>
   <meta name="description" content="مكتب العمران كروب للتعهدات يقدم خدمات البناء والإكساء والديكور في دمشق وريفها.">
   <meta name="keywords" content="تعهدات, إكساء, ديكور, دمشق, سوريا, العمران كروب">
-  <style>
+  <style>.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0.9;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
     body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
     header { background-color: #2c3e50; color: white; text-align: center; padding: 20px; }
     nav { background-color: #eee; text-align: center; padding: 10px; }
@@ -39,9 +51,48 @@
       display: none; padding: 10px; background-color: #fff;
       border-right: 3px solid #25D366; margin-top: 5px; border-radius: 5px;
     }
-  </style>
-</head>
-<body>
+<style>
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0.9;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+}
+</style>
+
 
 <header>
   <h1>مكتب العمران كروب للتعهدات</h1>
@@ -55,7 +106,6 @@
   <a href="#contact">اتصل بنا</a>
   <a href="#faq">الأسئلة الشائعة</a>
 </nav>
-
 <section id="gallery">
   <h2>📸 معرض الصور</h2>
   <div class="gallery-grid">
@@ -65,9 +115,12 @@
     <div><h3>🪟 الألمنيوم</h3><img src="images/aluminum.jpg" alt="الألمنيوم" loading="lazy"></div>
     <div><h3>🧱 السيراميك</h3><img src="images/ceramic.jpg" alt="السيراميك" loading="lazy"></div>
     <div><h3>🎨 الديكور</h3><img src="images/decor.jpg" alt="الديكور" loading="lazy"></div>
-    <div><h3>🎨 الدهان والصباغ</h3><img src="images/paint.jpg" alt="الدهان والصباغ" loading="lazy"></div>
+    <div><h3>🎨 الدهان والصباغ</h3>
+      <img src="https://raw.githubusercontent.com/alomrans197-jpg/-25/main/images/paint%20(13).jpg" alt="الدهان والصباغ" loading="lazy">
+    </div>
   </div>
 </section>
+
 
 <section id="about">
   <h2>🏢 من نحن</h2>
